@@ -4,15 +4,14 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# Hi, call me Ben.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+My research focuses on human-centred design and emotional ergonomics supported by intelligent systems. I prototype experimental interfaces that emphasise the human over the user.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+I'm currently working on speculative tools for knowledge representation, well-being support, and communication. My main projects are Void, an app challenging the note-taking trends by focusing on capture over recall; and Amulet, an app for social journalling through analogies and metaphors of energy to nurture support networks. 
 
+I share my writings here that cover topics such as design research, case studies, and software development. I adapt some of these writings into videos on YouTube to promote accessibility and community for my research.
 
-[jekyll-organization]: https://github.com/jekyll
+I'm currently designing products with startups at No Blank Space. Previously, I was a product manager at Techwolf. I studied human-computer interaction at University College London and computer science at the University of Cambridge.
+
+If you want to get in touch, it's easiest to reach me through Twitter as @benjaminsearle_ or through my email ben (at) searle (dot) hu. Alternatively, you can send a direct message through noblank.space.
