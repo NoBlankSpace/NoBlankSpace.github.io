@@ -8,7 +8,7 @@ layout: default
     <p>My research focuses on human-centred design and emotional ergonomics supported by intelligent systems. I prototype experimental interfaces that emphasise the human over the user.</p>
   </div>
   <div style="width: 200px;"> <!-- Adjust width as needed -->
-    <img src="/assets/pfp.png" alt="Profile Picture" style="height: fill; transform: rotate(3deg); box-shadow: 0px 1px 4px rgba(0,0,0,0.5);">
+    <img src="/assets/pfp.png" alt="Profile Picture" style="transform: rotate(3deg); box-shadow: 0px 1px 4px rgba(0,0,0,0.5);">
   </div>
 </div>
 
