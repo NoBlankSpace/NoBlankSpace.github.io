@@ -10,6 +10,7 @@
     padding: 50px; /* Add padding */
     margin: auto; /* Center the container */
     box-sizing: border-box; /* Include padding in the width */
+    gap: 50px;
 }
 
 .content {
