@@ -7,7 +7,7 @@ layout: default
     <h1>Hi, I'm Ben.</h1>
     <p>My research focuses on human-centred design and emotional ergonomics supported by intelligent systems. I prototype experimental interfaces that emphasise the human over the user.</p>
   </div>
-  <div style="flex: 0 0 80px;"> <!-- Adjust width as needed -->
+  <div style="width: 140px;"> <!-- Adjust width as needed -->
     <img src="/assets/pfp.png" alt="Profile Picture" style="height: 129px; transform: rotate(3deg); box-shadow: 5px 5px 10px rgba(0,0,0,0.5);">
   </div>
 </div>
