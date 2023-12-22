@@ -12,8 +12,14 @@
     margin-bottom: 32px;
     word-spacing: 140px;
     line-height: 1.2em;
-    font-weight: bold; 
+}
+
+.profile a {
     font-size: 18px;
+    color: #000; /* Button text color */
+    letter-spacing: -0.2px;
+    font-weight: bold; 
+    text-decoration: none;
 }
 
 .profile-pic img {

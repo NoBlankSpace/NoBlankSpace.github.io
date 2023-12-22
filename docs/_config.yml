@@ -28,8 +28,8 @@ domain: bhorda.github.io
 # Comment this line out when pushing to GitHub
 # baseurl: /bhorda.github.io # the subpath of your site, e.g. /blog
 url: https://bhorda.github.io # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: benjaminsearle_
+github_username:  bhorda
 
 # Build settings
 theme: minima
