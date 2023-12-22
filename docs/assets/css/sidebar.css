@@ -15,6 +15,7 @@
 }
 
 .profile a {
+    display: block;
     font-size: 18px;
     color: #000; /* Button text color */
     letter-spacing: -0.2px;
