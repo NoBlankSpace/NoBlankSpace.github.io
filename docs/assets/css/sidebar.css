@@ -44,6 +44,7 @@
 
 .external-links a.noblankspace {
     border: 2px solid black; /* 2px black border */
+    letter-spacing: -0.7px;
 }
 
 .external-links a {

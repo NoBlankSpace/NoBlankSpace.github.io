@@ -8,13 +8,10 @@ permalink: /projects
 
 ## Current
 **Amulet Social Journalling**\
-*App for supporting community-centric personal energy management* - [*Link*](/amulet)\
-Amulet is a new take on journalling.
+*App for supporting community-centric personal energy management* - [*Link*](/amulet)
 
 **Void Knowledge Management**\
-*Explorative study on intentionally imperfect note-taking.*\
-
-
+*Explorative study on intentionally imperfect note-taking.* - [*Figma doc*](https://www.figma.com/file/uvdFSgSNeqAohRrif95Bh2/Void-App?type=design&node-id=108%3A1835&mode=design&t=855WqlKT1VofLXYR-1)
 
 ## Archived
 **Soulbloom: towards physicalisation of personal data for well-being and communication**\
