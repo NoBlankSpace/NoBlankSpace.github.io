@@ -73,12 +73,6 @@
     border-bottom: none;
 }
 
-.copyright {
-    font-size: 12px;
-    color: #666;
-    text-align: right;
-}
-
 @media (max-width: 600px) {
     .sidebar {
         /* existing sidebar styles */
@@ -137,9 +131,6 @@
         display: none;
     }
 
-    .copyright {
-        display: none;
-    }
 
     .profile .desktop-name {
         display: none;
