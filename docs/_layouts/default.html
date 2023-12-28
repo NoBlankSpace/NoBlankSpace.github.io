@@ -1,18 +1,23 @@
-<link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    <!-- Add any additional head elements here -->
+</head>
+<body>
+    <div class="container">
+        <!-- Main content area -->
+        <div class="content">
+            {{ content }}
+        </div>
 
-<div class="container">
-  
-  <!-- Main content area -->
-  <div class="content" style="width: 80%;">
-    {{ content }}
-  </div>
-  
-  <!-- Sticky sidebar menu -->
-  <div class="sidebar">
-    {% include sidebar.html %}
-  </div>
-
-  </div>
-
-</div>
-
+        <!-- Sticky sidebar menu -->
+        <div class="sidebar">
+            {% include sidebar.html %}
+        </div>
+    </div>
+</body>
+</html>

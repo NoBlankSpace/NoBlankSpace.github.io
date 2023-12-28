@@ -23,11 +23,8 @@
     text-decoration: none;
 }
 
-.profile-pic img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Adjust as needed for your image */
-    border-radius: 50%; /* Makes the image circular */
+.profile .mobile-name {
+    display: none;
 }
 
 .button-group, .external-links {
@@ -80,4 +77,83 @@
     font-size: 12px;
     color: #666;
     text-align: right;
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        /* existing sidebar styles */
+        width: 100%;
+        display: flex;
+        position: relative;
+        top: 0;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    .profile {
+        padding: 0px; /* Adjust padding as needed */
+        margin-bottom: 0px;   
+        word-spacing: 0px;
+    }
+    
+    .profile a {
+        display: flex;
+        font-size: 18px;
+        color: #000; /* Button text color */
+        letter-spacing: -0.2px;
+        font-weight: bold; 
+        text-decoration: none;
+        line-height: 1em;
+    }
+
+    .button-group a, .external-links a {
+        /* Example: Make the links full-width */
+        width: 100%;
+        text-align: center; /* Center the text if desired */
+        line-height: 1em;
+    }
+
+    .button-group, .external-links {
+        display: flex;
+        justify-content: space-between; 
+        margin-bottom: 0px;     
+        padding: 0px;
+    }
+    
+    .button-group a {
+        display: flex;
+        text-decoration: none;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 8px;
+        padding-right: 0px;
+        color: #000; /* Button text color */
+        border-bottom: 0px solid #000; /* Vertical line */
+        font-size: 18px;
+        letter-spacing: -0.2px;
+    }
+
+    .external-links {
+        display: none;
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    .profile .desktop-name {
+        display: none;
+    }
+    .profile .mobile-name {
+        display: inline; /* or block, depending on your layout */
+    }
+}
+
+@media (min-width: 601px) {
+    .profile .desktop-name {
+        display: block;
+    }
+    .profile .mobile-name {
+        display: none;
+    }
 }

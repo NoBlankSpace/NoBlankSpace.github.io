@@ -33,5 +33,24 @@ h1 {
 
 a {
     color: #1c1c1c;
-    text-decoration: underline;
+    text-decoration:wavy;
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        padding: 4px;
+        gap: 4px;
+    }
+
+    .sidebar {
+        width: 100%;
+        order: -1; /* This places the sidebar above the content */
+        position: relative; /* Resets sticky positioning on mobile */
+    }
+
+    .content {
+        width: 100%; /* Ensures content takes full width on mobile */
+    }
 }

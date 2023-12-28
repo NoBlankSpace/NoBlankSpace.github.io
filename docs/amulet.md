@@ -8,7 +8,7 @@ permalink: /amulet
 
 Amulet is a social journalling app that allows people to communicate and share their physical and mental state through metaphors and images. Unlike other journalling apps, Amulet promotes the social expression of well-being as a complement to personal journalling. Social support networks have been shown to address issues with isolation and communication, as well as foster self-management skills within the user through collective responsibility and reliance. 
 
-<img src="/assets/images/amulet/onboarding.png" alt="Onboarding flow" width="600"/>
+<img src="/assets/images/amulet/onboarding.png" alt="Onboarding flow" width="100%"/>
 
 The target audience eventually reach a greater community, but today the project concentrates on the following groups: 
 - People with disabilities that compromise their social and mental well-being due to isolation and agency,
