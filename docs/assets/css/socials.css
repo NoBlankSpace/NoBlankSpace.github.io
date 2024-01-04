@@ -1,0 +1,51 @@
+.social-icons {
+    /* existing sidebar styles */
+    display: block;
+    /* justify-content: space-between;  */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.social-icons a {
+    /* existing sidebar styles */
+    font-size:18px;
+    text-decoration: none;
+    color: #1c1c1c;
+    padding-right: 6px;
+}
+
+.social-icons-mobile {
+    /* existing sidebar styles */
+    display: block;
+    /* justify-content: space-between;  */
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.social-icons-mobile a {
+    /* existing sidebar styles */
+    font-size:20px;
+    text-decoration: none;
+    color: #1c1c1c;
+    padding-right: 10px;
+}
+
+@media (max-width: 600px) {
+    .social-icons {
+        display: none;
+    }
+
+    .social-icons-mobile {
+        display: block;
+    }
+}
+
+@media (min-width: 601px) {
+    .social-icons {
+        display: block;
+    }
+
+    .social-icons-mobile {
+        display: none;
+    }
+}
