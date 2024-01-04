@@ -23,5 +23,5 @@ I'm currently designing products with startups at [**NoBlankSpace**](https://nob
 If you want to get in touch, it's easiest to reach me through Twitter as *@benjaminsearle_* or through my email *ben (at) searle (dot) hu*. Alternatively, you can send a direct message through *noblank.space*.
 
 <div class ="socials">
-        {% include socials-mobile.html %}
-    </div>
+  {% include socials-mobile.html %}
+</div>
