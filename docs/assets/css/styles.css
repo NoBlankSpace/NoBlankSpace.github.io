@@ -33,7 +33,7 @@ h1 {
 
 a {
     color: #1c1c1c;
-    text-decoration:wavy;
+    text-decoration:underline;
 }
 
 /* Responsive Design for Mobile Screens */

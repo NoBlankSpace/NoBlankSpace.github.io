@@ -14,5 +14,7 @@ Managing personal energy is essential for day-to-day life and engaging with peop
 
 
 [**Anticipatory detection of compulsive body-focused repetitive behaviors with wearables**](https://dl.acm.org/doi/10.1145/3447526.3472061)\
-*ACM MobileHCI* - *2021*\
+*ACM MobileHCI* - *2021* - [*Code & Dataset*](https://github.com/Bhorda/BFRBAnticipationDataset)\
 Conducted feasibility study for smartwatch application for use in mental health tracking of compulsive behaviour (BFRBs). Motion data gathered from experiments with human participants used to develop such an application for smartwatches.
+
+
