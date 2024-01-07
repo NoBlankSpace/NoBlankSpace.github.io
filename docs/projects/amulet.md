@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Amulet Social Journalling
-permalink: /amulet
+permalink: /projects/amulet
 ---
 
 <img src="/assets/amulet.png" alt="Amulet Logo" width="140"/>
