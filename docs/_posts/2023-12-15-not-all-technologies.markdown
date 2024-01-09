@@ -3,31 +3,33 @@ layout: post
 title:  "Human-centred design: Not all technologies need a 'problem'"
 date:   2023-12-15
 ---
-> **This post is still a note.**
-> *TL;DR Users imply problems, but not all aspects of the human experience are problems. Mental health, social support, and creativity are but a few aspects of experience that don't work in the lenses of user-centred design because they're not problems in the traditional sense. Its a deeply frowned upon perspective in therapy and healthcare to consider one to be 'broken' and therefore 'fixable' - I believe this perspective should extend into design. Human-centred design works under and around the **person** to support their life and circumstances.*
 
-I've upheld this perspective on my career that I will be 'oscillating between academia and industry' and never fully committed to one or the other. To this day, I maintain that the chasm between the two is best described as a broken relationship that was once a happy marriage - now turned spiteful and cold. Startups and investors have pulled away from the slow and rigorous process of academia in favour of 'build fast break faster' ideals of product development. On the other hand, the responsible and merit-based (arguable) environment of academia produces artefacts that are professionally validated - a particularly important badge to gain when working in critical and sensitive fields, such as wellfare. 
+Over the years, I’ve worked on several projects that presumed the use of user-centred design methods. However, whether it was designing technology for people with disabilities or people worried about AI’s impact on the humanity of work, the conversation around the person was often more important that the one around the technology. I often found myself following these people in conversation instead of leading into the ‘design specifications’ I was sent to collect. After enough time, I realised this was the only way to do it. In fact, I learnt that this is what sales does. In an ideal world, this is immediately obvious to everyone. To me - a techy compsci - this was not yet the case. 
 
-My stance of 'I see good on both sides' is not novel, but after years and years of rehashing my argument I believe I found the root of my position in human-centred design. 
+After some years of rehashing my argument, I found out about *human-centred* design. 
 
 ## Unpacking Human-Centred Design
 
-Human-centred design is not always used appropriately, but it is a well-established school of design. Its more common cousin (child, actually) is user-centred design. The difference is not always relevant or respected, but ChatGPT does a decent job highlighting the contrast: 
+Human-centred design is not always used consciously, but it is a well-established school of design. Its more common cousin (child, actually) is user-centred design. The difference is not always relevant or respected, but here’s an attempt at contrasting the two: 
 
 User-Centered Design (UCD):
-- UCD is a subset of human-centered design.
-- It primarily focuses on the users of a specific product or service.
-- The emphasis is on understanding and meeting the needs, wants, and limitations of the end users of a product or system.
-- UCD often involves direct user feedback and iterative design processes to improve usability and user experience.
-- UCD is typically more narrow in its approach, dealing specifically with the interaction between users and products or systems.
+
+- **Focus:** understanding and meeting the needs, wants, and limitations of the end users of a product or system.
+- **Methods:** direct user feedback and iterative design processes related to the usability and experience of the product.
+- Applied UCD considers the *closed system* that is the user and the computer. This is not strictly closed, but rather aims to reach a well-defined problem that can be addressed as though it were a closed system. 
 
 Human-Centered Design (HCD):
 
-- HCD has a broader scope than UCD.
-- It not only considers the immediate users of a product or system but also takes into account the larger context in which a product or service will be used. This includes understanding the human, social, and cultural aspects.
-- HCD aims to create solutions that address broader societal and environmental issues, not just user-specific problems.
-- It involves a more holistic approach to design, considering the overall impact of a design solution on individuals, communities, and societies.
-- HCD emphasizes empathy and the need to design for diverse groups of people, often involving multidisciplinary teams.
+- **Focus:** considering the context in which the product will be used, including human, social, and cultural aspects. Necessarily, the needs and wants are also incorporated.
+- **Methods:** more holistic approach to design, considering individual, community, and societal impact. Regularly involves  ethnographic research and reflective investigation.
+- Applied HCD considers the open system that is the human and the computer, where human can be thought of as a superset of the user. This means HCD does not aim to define and therefore reduce it to a problem, rather it aims to find ways to *improve* and not *solve* the system’s state. 
 
-The main point is that **human-centred design considers the human aspects - beyond the well-defined user of user-centred design**. 
+## “Problems” - words are important
 
+This distinction between the positions of UCD’s ‘technology addressing problems’ versus HCD’s ‘technology supporting people’ is critical to understand to apply the appropriate method in design. Problems imply some reasonably well-defined scenario and the existence of a solution that resolves the problem. Human-centred design works under and around the person to support their life and circumstances.
+
+Mental health, social support, and creativity are but a few aspects of experience that don't work in the lenses of user-centred design because they're not *problems* in the traditional sense. It’s a deeply frowned upon perspective in healthcare and psychology to consider one to be 'broken' and therefore 'fixable’. Instead, an individual’s situation can be improved or at least the displeasure can be eased. I believe this perspective should extend to design.
+
+This brief note is not about attacking user-centred methods, rather it is about calling for designers to consider their responsibility and impact in making tools for people. Businesses will always have problems - the goal to ‘create more value’ is well-defined. UCD provides measurable conditions for success, allowing companies to move to address other problems and so on and so on. 
+
+Things like social connection, fulfilment, and happiness are not fixable. Not all aspects of the human experience are problems, so please don’t try to solve lives. 
