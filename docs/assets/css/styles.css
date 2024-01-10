@@ -6,7 +6,7 @@
     justify-content: space-between;
     margin: auto;
     flex-wrap: wrap;
-    max-width: 1000px;
+    max-width: 900px;
     padding: 50px; /* Add padding */
     margin: auto; /* Center the container */
     box-sizing: border-box; /* Include padding in the width */

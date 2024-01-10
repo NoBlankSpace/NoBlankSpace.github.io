@@ -14,7 +14,7 @@ layout: default
   
 </div>
 
-I'm currently working on speculative tools for knowledge representation, well-being support, and communication. My main projects are [**Void**](/projects), an app challenging the note-taking trends by focusing on capture over recall; and [**Amulet**](/amulet), an app for social journalling through analogies and metaphors of energy to nurture support networks. 
+I'm currently working on speculative tools for knowledge representation, well-being support, and communication. My main projects are [**Void**](/projects), an app challenging the note-taking trends by focusing on capture over recall; and [**Amulet**](/projects/amulet), an app for social journalling through analogies and metaphors of energy to nurture support networks. 
 
 I share my writings here that cover topics such as design research, case studies, and software development. I adapt some of these writings into videos on [**Youtube**](https://www.youtube.com/@Benjibo) to promote accessibility and community for my research.
 

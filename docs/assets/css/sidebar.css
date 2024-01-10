@@ -30,13 +30,14 @@
 .button-group, .external-links {
     display: block;
     justify-content: space-between;
-    margin-bottom: 32px;    
+    margin-bottom: 32px;
 }
 
 .external-links a.youtube {
     background-color: red; /* Red background for YouTube link */
     color: white; /* White text */
-    display: block;
+    display: flex;
+    gap: 4px;
 }
 
 .external-links a.noblankspace {
