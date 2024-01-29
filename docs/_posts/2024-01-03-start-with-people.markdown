@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Why don't we start design with people anymore?"
+title:  "Designed for you vs designed for it"
 date:   2024-01-03
 ---
 > **This post is still a note.**

@@ -4,6 +4,8 @@ title:  "Spatial software - trend or antitrend?"
 date:   2024-01-25
 ---
 
+*There is enough hype in spatial software to call it a trend by now. Especially with the Apple Vision Pro launch, anyone could be certain it will become more prevalent much sooner than later. However, what it represents today - in expression and creativity - seems more like the antitrend to linear / overly structured / inexpressive paradigm of long-form content we have today. An antitrend is an opposition to current trends, rather than a trend that stands on its own.*
+
 I’m not convinced that spatial software is solving the problem of inadequacy in todays interfaces. I’m not even sure if it’s figured out the problem it’s addressing. I’ve never created a “knowledge graph” in my notebooks. I don’t think I’d use infinite paper much either - I get lost easily. 
 
 <img src="/assets/images/sane-spatial-example.png" alt="Sane's demonstration of spatial software." width="100%"/>
