@@ -23,7 +23,7 @@ More and more experiences are taking up valuable space in our lives. The product
 
 This defines our mission - to create products where all experiences and senses have meaning and purpose.
 
-<div class="vertical-line" style="margin-bottom: 80px;"></div>
+<div class="vertical-line" style="margin-bottom: 40px;"></div>
 
 <div>
 <div style="display: flex; align-items: center; justify-content: space-around; height: 50px;">
@@ -46,7 +46,7 @@ Journals and notes are just where we start.
 
 <a href="/work"><i class="ph-fill ph-caret-right"></i>Our work</a>
 
-<div style="margin-bottom: 80px;"></div>
+<div style="margin-bottom: 40px;"></div>
 
 <div style="display: flex; align-items: center; justify-content: space-around; height: 50px;">
   <div style="width: 70px;"> <!-- Adjust width as needed -->
