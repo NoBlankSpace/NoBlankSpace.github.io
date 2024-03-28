@@ -4,7 +4,8 @@ title: Amulet Social Journalling
 permalink: /work/amulet
 ---
 
-<div class="about-container" >
+<a href="/">
+<div class="about-container">
 <div style="display: flex; align-items: center; justify-content: space-around;">
   <div style="width: 110px;"> <!-- Adjust width as needed -->
    <!--change to assets/pfp.png when working locally smh-->
@@ -14,6 +15,7 @@ permalink: /work/amulet
     <h3 style="width: 50px; line-height=10px;">No Blank Space</h3>
   </div>
 </div>
+</a>
 <div class="button-container" style="justify-content: flex-start; margin-top: 0px;">
     <a href="/work" class="work"><i class="ph-fill ph-caret-right"></i>Our work</a>
     <a href="/about" class="about"><i class="ph-fill ph-caret-right"></i>About us</a>
