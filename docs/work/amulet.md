@@ -36,6 +36,6 @@ The target audience eventually reach a greater community, but today the project 
 - Members of support groups, 
 - Professional therapists and their patients. 
 
-The project employs the theoretical and practical results of my personal energy management research, which is based in activity theory, ludic design, human-centred design, and self-tracking practices.
+The project employs the theoretical and practical results of our personal energy management research, which is based in activity theory, ludic design, human-centred design, and self-tracking practices.
 
 *Amulet is expected to be released for alpha testing in Summer 2024.*

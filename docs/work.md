@@ -39,6 +39,25 @@ Our current focus is on personal computing, currently exploring well-being techn
     </div>
 </a>
 
+<div style="margin-bottom: 20px;"></div>
+
+<a href="/work/tabs" style="width: 100%; display: block;">
+    <div style="display: flex; align-items: center; justify-content: space-between; height: 50px;">
+        <div style="width: 70px;"> <!-- Adjust width as needed -->
+            <img src="/assets/tabslogo.svg" alt="SVG Image" style="vertical-align: middle; width: 60px;">
+        </div>
+        <div style="flex: 1;">
+            <div style="width: 100%;">
+                <p style="font-weight: 600; margin: 0;">Tabs</p>
+                <p style="font-weight: 400; margin: 0;">Overwhelm-friendly Todos</p>
+            </div>
+        </div>
+        <div style="width: 30px;"> <!-- Adjust width as needed -->
+            <i class="ph-fill ph-caret-right"></i>
+        </div>
+    </div>
+</a>
+
 
 <div style="margin-bottom: 70vh;"></div>
 
