@@ -1,12 +1,7 @@
 ---
-import Theme from '../styles/index.css';
-
 import { Image } from 'astro:assets';
 import AmuletLogo from '../assets/amuletlogo.svg';
 import TabsLogo from '../assets/tabslogo.svg';
-import NBSLogo from '../assets/nbsnewlogo.svg';
-import Apps from '../assets/squares-four.svg';
-import About from '../assets/question.svg';
 
 import Header from '../components/Header.astro';
 ---
@@ -283,27 +278,27 @@ import Header from '../components/Header.astro';
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-        document.querySelectorAll('.letter').forEach((span, i) => {
-            span.addEventListener('mouseenter', function() {
-                if (this.getAttribute('data-revealed') === 'false') {
-                    // Add the animation class
-                    this.classList.add('wobble-animation');
+    document.querySelectorAll('.letter').forEach((span) => {
+        span.addEventListener('mouseenter', function(this: HTMLElement) {
+            if (this.getAttribute('data-revealed') === 'false') {
+                // Add the animation class
+                this.classList.add('wobble-animation');
 
-                    // Set color
-                    const colors = ['#000000', '#e4572e', '#000000', '#17bebb','#000000', '#ffc914'];
-                    const randomColor = colors[Math.floor(Math.random() * colors.length)];
-                    this.style.color = randomColor;
+                // Set color
+                const colors = ['#000000', '#e4572e', '#000000', '#17bebb','#000000', '#ffc914'];
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                this.style.color = randomColor;
 
-                    // Set revealed
-                    this.setAttribute('data-revealed', 'true');
+                // Set revealed
+                this.setAttribute('data-revealed', 'true');
 
-                    // Remove animation class after it completes
-                    this.addEventListener('animationend', () => {
-                        this.classList.remove('wobble-animation');
-                    }, {once: true});
-                }
-            });
+                // Remove animation class after it completes
+                this.addEventListener('animationend', () => {
+                    this.classList.remove('wobble-animation');
+                }, {once: true});
+            }
         });
     });
+});
 
 </script>

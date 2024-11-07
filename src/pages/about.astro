@@ -1,12 +1,5 @@
 ---
-import Theme from '../styles/index.css';
-
 import { Image } from 'astro:assets';
-import AmuletLogo from '../assets/amuletlogo.svg';
-import TabsLogo from '../assets/tabslogo.svg';
-import NBSLogo from '../assets/nbsnewlogo.svg';
-import Apps from '../assets/squares-four.svg';
-import About from '../assets/question.svg';
 
 import Copy from '../assets/copy.svg';
 import Send from '../assets/paper-plane-right-fill.svg';
@@ -327,18 +320,16 @@ import Header from '../components/Header.astro';
 </style>
 
 <script>
-document.querySelectorAll('.letter').forEach((span, i) => {
-    span.addEventListener('mouseenter', function() {
+document.querySelectorAll('.letter').forEach((span) => {
+    span.addEventListener('mouseenter', function(this: HTMLElement) {
         if (this.getAttribute('data-revealed') === 'false') {
             // Add the animation class
             this.classList.add('wobble-animation');
 
             // Set color
-            // const colors = ['#e4572e', '#17bebb', '#ffc914', '#76b041'];
             const colors = ['#000000', '#e4572e', '#000000', '#17bebb','#000000', '#ffc914'];
             const randomColor = colors[Math.floor(Math.random() * colors.length)];
             this.style.color = randomColor;
-            // this.style.fontfamily
 
             // Set revealed
             this.setAttribute('data-revealed', 'true');
