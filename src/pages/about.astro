@@ -1,0 +1,386 @@
+---
+import Theme from '../styles/index.css';
+
+import { Image } from 'astro:assets';
+import AmuletLogo from '../assets/amuletlogo.svg';
+import TabsLogo from '../assets/tabslogo.svg';
+import NBSLogo from '../assets/nbsnewlogo.svg';
+import Apps from '../assets/squares-four.svg';
+import About from '../assets/question.svg';
+
+import Copy from '../assets/copy.svg';
+import Send from '../assets/paper-plane-right-fill.svg';
+
+import Header from '../components/Header.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+		<!-- <script src="https://unpkg.com/roughjs@latest/bundled/rough.js"></script> -->
+	</head>
+	<body>
+
+	<div class="container">
+	<Header />
+
+		<div class="content">
+			<h1> About us. </h1>
+			<p style="max-width: 500px"> We are a software studio specialising in rethinking common things with a touch of consideration and imagination. </p>
+			<div class="questions-container">
+				<div class="question" style="transform: rotate(-2deg);">
+				<h2> What are blank spaces? </h2>
+				<p> Blank spaces are what we call the spaces that are occupied by forgettable experiences and interactions, like endless scrolling or watching ads (or habits that feel like chores!). Our belief is that software doesn't need to be powerful, it just needs to support something meaningful.  </p>
+				</div>
+				<div class="question" style="transform: rotate(2deg);">
+				<h2> What are human things? </h2>
+				<p> Human things are <strong>not</strong> perfect, efficient, or scalable. <br> Human things are personal, emotional, and meaningful. <br> Human things are flawed so they can change. <br> We build software that focus on human things. <br> Journals and todos are just where we start.</p>
+				</div>
+			</div>
+
+			<h1 style="padding-top: 2rem"> Contact us. </h1>
+			<div class="contacts-container">
+				<div class="contact" style="transform: rotate(1deg);">
+					<h2> Need support? </h2>
+					<div class="email-box">
+						<div class="copy-alert" id="support-alert">Copied!</div>
+        		<button type="button" class="email-content" onclick="copyContent('support@noblank.space','support-alert')">
+            	<Image src={Copy} alt="Copy" width="20" height="20" style="opacity: 0"/>
+             	<p>support@noblank.space</p>
+             	<Image src={Copy} alt="Copy" width="20" height="20" class="copy-button"/>
+            </button>
+            <a href="mailto:support@noblank.space">
+            	<Image src={Send} alt="Send" width="20" height="20" class="arrow"/>
+            </a>
+          </div>
+				</div>
+				<div class="contact" style="transform: rotate(-1deg);">
+					<h2> Business inquiries? </h2>
+					<div class="email-box">
+						<div class="copy-alert" id="hello-alert">Copied!</div>
+        		<button type="button" class="email-content" onclick="copyContent('hello@noblank.space','hello-alert')">
+            	<Image src={Copy} alt="Copy" width="20" height="20" style="opacity: 0"/>
+             	<p>hello@noblank.space</p>
+             	<Image src={Copy} alt="Copy" width="20" height="20" class="copy-button"/>
+            </button>
+            <a href="mailto:hello@noblank.space">
+            	<Image src={Send} alt="Send" width="20" height="20" class="arrow"/>
+            </a>
+          </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="footer-container">
+				<p>© 2024 No Blank Space</p>
+				<a class="wide-only" href="/about#contact">
+            Want to get in touch?
+        </a>
+				<p>All rights reserved.</p>
+			</div
+		</div>
+	</div>
+
+	</body>
+</html>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Outfit:wght@100..900&display=swap');
+
+	body {
+		font-family: 'Outfit';
+		margin: 0;
+		padding: 0;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	h1 {
+		font-weight: 500;
+		font-size: 3rem;
+		padding: 0rem;
+		margin: 0rem;
+		font-family: 'Gaegu';
+		color: #00000044;
+	}
+	h2 {
+		font-weight: 500;
+		font-size: 2rem;
+		padding: 0rem;
+		margin: 0rem;
+		font-family: 'Gaegu';
+		color: #00000044;
+	}
+
+	p {
+		padding: 0rem;
+		margin: 0rem;
+		font-weight: 300;
+		text-align: center;
+	}
+
+	a {
+		color: black;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		max-width: 1200px;
+		width: 100%;
+    min-height: 100vh;
+	}
+
+	.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+	}
+
+	.questions-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		max-width: 1200px;
+		gap: 2rem;
+		padding-top: 3rem;
+	}
+
+	.question {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		max-width: 400px;
+	}
+
+	.contacts-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		max-width: 1200px;
+		gap: 2rem;
+		padding: 1rem 0rem;
+	}
+
+	.contact {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		backface-visibility: hidden; /* Prevent flickering and layout shifts */
+		will-change: transform, box-shadow; /* Tell the browser to optimize for these changes */
+	}
+
+
+	.email-box {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		background-color: #BBBBBB;
+		border-radius: 100rem;
+		padding: 0.2rem 0.2rem;
+	}
+
+	.email-box a {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		border-radius: 100rem;
+	}
+
+	.email-content {
+  border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-align: inherit;
+    font-size: inherit;
+    color: inherit;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		background-color: #FFFFFF;
+		border-radius: 100rem;
+		gap: 0.2rem;
+		padding: 0.2rem 0.2rem;
+	}
+
+	.copy-button {
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+
+	.email-content:hover .copy-button {
+		opacity: 1;
+	}
+
+	.arrow {
+		fill: #FFFFFF;
+		padding: 0rem 0.2rem;
+	}
+
+	.copy-alert {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    background-color: #00000044;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 100rem;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    z-index: -100;
+}
+
+.copy-alert.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0.5rem);
+}
+
+.footer {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		width: 100vw;
+		height: 3rem;
+		background-color: #000000;
+		border: none;
+		color: #FFFFFF88;
+		overflow: visible; /* Add this to allow content to overflow */
+	}
+	.footer-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 1rem; /* Instead of padding */
+		overflow: visible; /* Add this too */
+	}
+	.footer-container a {
+		color: #FFFFFF88;
+	}
+
+	@media (max-width: 900px) { /* This is the max-width of the footer */
+		.wide-only {
+			display: none;
+		}
+
+		.questions-container {
+			flex-direction: column;
+		}
+
+		.contacts-container {
+			flex-direction: column;
+		}
+	}
+
+	</style>
+
+	<style>
+.letter {
+    color: #00000044;
+    display: inline-block;
+    cursor: pointer;
+}
+
+@keyframes wobble {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.wobble-animation {
+    animation: wobble 0.3s ease forwards;
+}
+</style>
+
+<script>
+document.querySelectorAll('.letter').forEach((span, i) => {
+    span.addEventListener('mouseenter', function() {
+        if (this.getAttribute('data-revealed') === 'false') {
+            // Add the animation class
+            this.classList.add('wobble-animation');
+
+            // Set color
+            // const colors = ['#e4572e', '#17bebb', '#ffc914', '#76b041'];
+            const colors = ['#000000', '#e4572e', '#000000', '#17bebb','#000000', '#ffc914'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            this.style.color = randomColor;
+            // this.style.fontfamily
+
+            // Set revealed
+            this.setAttribute('data-revealed', 'true');
+
+            // Remove animation class after it completes
+            this.addEventListener('animationend', () => {
+                this.classList.remove('wobble-animation');
+            }, {once: true});
+        }
+    });
+});
+</script>
+
+
+<script is:inline>
+function copyContent(email) {
+    // const emailElement = document.querySelector('.email-content p');
+    // const email = emailElement.textContent;
+
+    navigator.clipboard.writeText(email)
+        .then(() => {
+            console.log("Email copied successfully");
+        })
+        .catch((err) => {
+            console.log("Failed to copy: ", err);
+        });
+}
+</script>
+
+
+<script is:inline>
+function copyContent(email, alertId) {
+    navigator.clipboard.writeText(email)
+        .then(() => {
+            const alert = document.getElementById(alertId);
+            alert.classList.add('show');
+            setTimeout(() => {
+                alert.classList.remove('show');
+            }, 1000);
+        })
+        .catch((err) => {
+            console.log("Failed to copy: ", err);
+        });
+}
+</script>

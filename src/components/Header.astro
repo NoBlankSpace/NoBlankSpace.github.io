@@ -1,0 +1,96 @@
+---
+import { Image } from 'astro:assets';
+
+import NBSLogo from '../assets/nbsnewlogo.svg';
+import AppsIcon from '../assets/squares-four.svg';
+import About from '../assets/question.svg';
+---
+
+<div class="header">
+	<div class="header-container">
+	<a href="/apps" class="nav-link logo-link">
+          <span>Apps</span>
+          <div class="drawer">
+              <Image src={AppsIcon} alt="NBS Logo" width="30" height="30"/>
+          </div>
+      </a>
+	<!-- <a href="/"> No Blank Space </a> -->
+	<a href="/" class="nav-link logo-link">
+          <span>No Blank Space</span>
+          <div class="drawer">
+              <Image src={NBSLogo} alt="NBS Logo" width="30" height="30"/>
+          </div>
+      </a>
+      <a href="/about" class="nav-link logo-link">
+          <span>About</span>
+          <div class="drawer">
+              <Image src={About} alt="NBS Logo" width="30" height="30"/>
+          </div>
+      </a>
+	</div>
+</div>
+
+<style>
+	.header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		width: 100vw;
+		height: 3rem;
+		color: #000;
+	}
+
+	.header-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 1rem; /* Instead of padding */
+	}
+</style>
+
+<style>
+.nav-link {
+    position: relative;
+    padding: 0.5rem 0;
+    overflow: hidden;
+}
+
+.nav-link span {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.drawer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.nav-link:hover span {
+    transform: translateY(100%);
+}
+
+.nav-link:hover .drawer {
+    transform: translateY(10%);
+}
+
+.nav-link {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    height: 3rem; /* Set explicit height to contain the drawer */
+    display: flex;
+    align-items: center;
+}
+</style>

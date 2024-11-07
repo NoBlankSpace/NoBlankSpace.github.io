@@ -1,0 +1,309 @@
+---
+import Theme from '../styles/index.css';
+
+import { Image } from 'astro:assets';
+import AmuletLogo from '../assets/amuletlogo.svg';
+import TabsLogo from '../assets/tabslogo.svg';
+import NBSLogo from '../assets/nbsnewlogo.svg';
+import Apps from '../assets/squares-four.svg';
+import About from '../assets/question.svg';
+
+import Header from '../components/Header.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+		<!-- <script src="https://unpkg.com/roughjs@latest/bundled/rough.js"></script> -->
+	</head>
+	<body>
+
+	<div class="container">
+		<Header />
+
+		<div class="content">
+			<div class="hero-container">
+			<p>
+	        {('Making human things a little more human.').split(' ').map((word, wordIndex) => (
+	            <>
+	                {wordIndex > 0 && ' '}
+	                <span class="word">
+	                    {Array.from(word).map((char, charIndex) => (
+	                        <span class="letter" data-revealed="false">{char}</span>
+	                    ))}
+	                </span>
+	            </>
+	        ))}
+	    </p>
+			<!-- <p>
+	        {Array.from('Making human things a little more human.').map((char, index) => (
+	            char === ' ' ? ' ' : <span class="letter" data-revealed="false">{char}</span>
+	        ))}
+	    </p> -->
+	    </div>
+      <a href="/apps/amulet" class="app-container amulet">
+          <Image src={AmuletLogo} alt="Amulet Logo" width="100" height="100"/>
+          <p style="font-family: 'Outfit'; font-weight: 300; font-size: 1rem; letter-spacing: 0%; color: #000000">Amulet</p>
+          <p>Journalling with metaphors and art</p>
+      </a>
+      <a href="/apps/tabs" class="app-container tabs">
+          <Image src={TabsLogo} alt="Amulet Logo" width="100" height="100"/>
+          <p style="font-family: 'Outfit'; font-weight: 300; font-size: 1rem; letter-spacing: 0%; color: #000000">Tabs</p>
+          <p>Tasks that help you decide what to do</p>
+      </a>
+		</div>
+
+		<div class="footer">
+			<div class="footer-container">
+				<p>© 2024 No Blank Space</p>
+				<a class="wide-only" href="/about#contact">
+            Want to get in touch?
+        </a>
+				<p>All rights reserved.</p>
+			</div
+		</div>
+	</div>
+
+	</body>
+</html>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Outfit:wght@100..900&display=swap');
+
+	body {
+		font-family: 'Outfit';
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	h1 {
+		font-weight: 500;
+		font-size: 1.5rem;
+		padding: 0rem;
+		margin: 0rem;
+	}
+
+	p {
+		padding: 0rem;
+		margin: 0rem;
+		font-weight: 300;
+	}
+
+	a {
+		color: black;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		max-width: 1200px;
+		width: 100%;
+		/* height: 100vh; */
+		min-height: 100vh;
+	}
+
+	.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+	}
+
+	.hero-container {
+	    display: flex;
+			transform: translate(0vw, -6vh);
+			order: 1;
+			max-width: 500px;
+	}
+	.hero-container p {
+	    font-family: "Gaegu";
+	    font-size: 3.5rem;
+	    text-align: center;
+	    font-weight: 700;
+	    color: #00000044;
+	}
+
+	.app-container {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    justify-content: center;
+	    min-width: 200px; /* ensures minimum width before wrapping */
+	    max-width: 200px;
+			backface-visibility: hidden; /* Prevent flickering and layout shifts */
+			will-change: transform, box-shadow; /* Tell the browser to optimize for these changes */
+	}
+	.app-container p {
+		font-family: "Gaegu";
+		font-size: 1.5rem;
+		text-align: center;
+		letter-spacing: -6%;
+		line-height: 1.25rem;
+		font-weight: 700;
+		padding: 0rem;
+		padding-bottom: 0.5rem;
+	}
+	.app-container img {
+		width: 50px;
+		height: 50px;
+	}
+
+	.amulet {
+	    transform: translate(-2vw, -8vh) rotate(-8deg);
+			/* transition: transform 0.3s ease;  */
+			transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+			order: 0;
+	}
+	.amulet p {
+		color: green;
+	}
+
+	.tabs {
+   transform: translate(2vw, -1vh) rotate(8deg);
+		/* transition: transform 0.3s ease;  */
+		transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+		order: 2;
+	}
+	.tabs p {
+		color: black;
+	}
+
+	.footer {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		width: 100vw;
+		height: 3rem;
+		background-color: #000000;
+		border: none;
+		color: #FFFFFF88;
+		overflow: visible; /* Add this to allow content to overflow */
+	}
+	.footer-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 1rem; /* Instead of padding */
+		overflow: visible; /* Add this too */
+	}
+	.footer-container a {
+		color: #FFFFFF88;
+	}
+
+	@media (max-width: 900px) {
+		.wide-only {
+			display: none;
+		}
+
+    .content {
+        flex-direction: column;
+        gap: 3rem;
+        height: 100%; /* Allow content to determine height */
+    }
+
+    .hero-container {
+        order: 0; /* Moves hero to the top on mobile */
+        transform: translate(0vw, 0vh);
+    }
+    .hero-container p {
+        font-size: 2.5rem;
+    }
+
+    .amulet {
+        order: 1;
+        transform: translate(0vw, 0vh) rotate(-4deg);
+    }
+    .amulet:hover {
+    	transform: translate(0vw, 0vh) rotate(0deg);
+    }
+
+    .tabs {
+        order: 2;
+        transform: translate(0vw, 0vh) rotate(4deg);
+    }
+    .tabs:hover {
+    	transform: translate(0vw, 0vh) rotate(0deg);
+    }
+}
+
+
+	</style>
+
+	<style>
+	.word {
+    display: inline-block;
+    white-space: nowrap;
+	}
+
+	.letter {
+    color: #00000044;
+    display: inline-block;
+    cursor: pointer;
+}
+
+@keyframes wobble {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.wobble-animation {
+    animation: wobble 0.3s ease forwards;
+}
+
+.amulet:hover {
+	transform: translate(-2vw, -8vh) rotate(0deg);
+}
+
+.tabs:hover {
+	transform: translate(2vw, -1vh) rotate(0deg);
+}
+
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.letter').forEach((span, i) => {
+            span.addEventListener('mouseenter', function() {
+                if (this.getAttribute('data-revealed') === 'false') {
+                    // Add the animation class
+                    this.classList.add('wobble-animation');
+
+                    // Set color
+                    const colors = ['#000000', '#e4572e', '#000000', '#17bebb','#000000', '#ffc914'];
+                    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                    this.style.color = randomColor;
+
+                    // Set revealed
+                    this.setAttribute('data-revealed', 'true');
+
+                    // Remove animation class after it completes
+                    this.addEventListener('animationend', () => {
+                        this.classList.remove('wobble-animation');
+                    }, {once: true});
+                }
+            });
+        });
+    });
+
+</script>

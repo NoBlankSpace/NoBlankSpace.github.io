@@ -1,0 +1,54 @@
+---
+
+---
+
+<div class="footer">
+	<div class="footer-container">
+		<p>© 2024 No Blank Space</p>
+		<a class="wide-only" href="/about#contact">
+      Want to get in touch?
+  </a>
+		<p>All rights reserved.</p>
+	</div
+</div>
+
+<style>
+	a {
+			color: black;
+			font-weight: bold;
+			text-decoration: none;
+		}
+
+	.footer {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			width: 100vw;
+			height: 3rem;
+			background-color: #000000;
+			border: none;
+			color: #FFFFFF88;
+			overflow: visible; /* Add this to allow content to overflow */
+		}
+		.footer-container {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			max-width: 1200px;
+			margin: 0 1rem; /* Instead of padding */
+			overflow: visible; /* Add this too */
+		}
+		.footer-container a {
+			color: #FFFFFF88;
+			text-decoration: none;
+		}
+
+		@media (max-width: 900px) {
+			.wide-only {
+				display: none;
+			}
+		}
+</style>

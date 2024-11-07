@@ -1,0 +1,316 @@
+---
+import { Image } from 'astro:assets';
+import TabsLogo from '../../assets/tabslogo.svg';
+
+import Header from '../../components/Header.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+		<!-- <script src="https://unpkg.com/roughjs@latest/bundled/rough.js"></script> -->
+	</head>
+	<body>
+
+	<div class="container">
+	<Header />
+
+		<div class="content">
+			<div class="apps-container">
+		<!-- Amulet -->
+				<div class="app-container">
+					<div class="app-header">
+						<Image src={TabsLogo} alt="Tabs Logo" width="100" height="100" />
+						<div class="app-name">
+							<h1 class="title">Tabs</h1>
+							<h1 class="subtitle">Focused todos</h1>
+						</div>
+					</div>
+					<div class="app-subheader">
+						<p class="wide-only">
+						Simplify decisions, always know what to do next.
+						</p>
+						<div class="release-status">Coming soon</div>
+					</div>
+				</div>
+				<div class="app-description">
+
+
+
+
+
+
+
+					<p>
+					Tabs is a task manager that helps you get work done by making it easier for you to see how to progress.
+					</p>
+
+					<p>
+					With Tabs, you see your next task for any project you're working on instead of all of them at once.
+					</p>
+
+					<p>
+					The initial target audience includes:
+					</p>
+
+					<ul>
+						<li>People with ADHD or ADD who experience executive dysfunction,</li>
+						<li>People who feel overwhelmed by lists of tasks,</li>
+						<li>People juggling several projects at once.</li>
+					</ul>
+
+					<p>
+					Tabs is expected to be released for alpha testing in Winter 2024.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="footer-container">
+				<p>© 2024 No Blank Space</p>
+				<a class="wide-only" href="/about#contact">
+      		Want to get in touch?
+      	</a>
+				<p>All rights reserved.</p>
+			</div
+</div>
+	</div>
+
+	</body>
+</html>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Outfit:wght@100..900&display=swap');
+
+	body {
+		font-family: 'Outfit';
+		margin: 0;
+		padding: 0;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	h1 {
+		font-weight: 500;
+		font-size: 3rem;
+		padding: 0rem;
+		margin: 0rem;
+		font-family: 'Gaegu';
+		color: #00000044;
+	}
+	h2 {
+		font-weight: 500;
+		font-size: 2rem;
+		padding: 0rem;
+		margin: 0rem;
+		font-family: 'Gaegu';
+		color: #00000044;
+	}
+
+	p {
+		padding: 0rem;
+		margin: 0rem;
+		font-weight: 300;
+	}
+
+	a {
+		color: black;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		max-width: 1200px;
+		width: 100%;
+    min-height: 100vh;
+	}
+
+	.header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		width: 100vw;
+		height: 3rem;
+		color: #000;
+	}
+
+	.header-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 1rem; /* Instead of padding */
+	}
+
+	.content {
+    display: flex;
+    flex-direction: column;
+    align-items: leading;
+    justify-content: start;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    flex: 1;
+	}
+
+	.apps-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+		padding: 0.5rem;
+
+	}
+
+	.app-container {
+		display: flex;
+		flex-direction: column;
+		/* background-color: #0000000B; */
+		padding: 0.75rem 1.25rem;
+		border-radius: 1rem;
+		flex: 1;
+		width: 100%;
+	}
+	.app-description {
+		text-align: justify;
+		max-width: 500px;
+		padding: 0.25rem;
+	}
+
+	.app-header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: leading;
+		flex: 1;
+		gap: 0.5rem;
+	}
+	.app-header h1 {
+		font-size: 1.25rem;
+		font-weight: 400;
+	}
+
+	.app-name {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+		flex: 1;
+	}
+	.app-header img {
+		width: 50px;
+		height: 50px;
+	}
+	.title {
+		font-family: "Outfit";
+		color: #000;
+		font-size: 1rem;
+	}
+	.subtitle {
+		font-family: "Gaegu";
+		color: #000;
+		font-size: 1rem;
+	}
+
+	.app-subheader {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		flex-grow: 1;
+		width: 100%;
+	}
+	.app-subheader p {
+		text-align: left;
+	}
+
+	.release-status {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		background-color: #00000088;
+		color: #ffffff;
+		font-size: 0.75rem;
+		padding: 0.4rem 0.8rem;
+		corner-radius: 1rem;
+		border-radius: 1rem;
+		white-space: nowrap
+	}
+
+.footer {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		width: 100vw;
+		height: 3rem;
+		background-color: #000000;
+		border: none;
+		color: #FFFFFF88;
+		overflow: visible; /* Add this to allow content to overflow */
+	}
+	.footer-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 1rem; /* Instead of padding */
+		overflow: visible; /* Add this too */
+	}
+	.footer-container a {
+		color: #FFFFFF88;
+	}
+
+	@media (max-width: 900px) { /* This is the max-width of the footer */
+		.wide-only {
+			display: none;
+		}
+
+		.title {
+			font-size: 1rem;
+		}
+		.subtitle {
+			font-size: 0.8rem;
+		}
+
+		.app-container {
+			flex-direction: row;
+			align-items: center;
+			flex: 1;
+			justify-items: space-between;
+		}
+
+		.app-name {
+			flex-direction: column;
+			gap: 0;
+			align-items: start;
+			flex: 1;
+		}
+
+		.app-subheader {
+			flex-direction: column;
+			align-items: start;
+			flex: 0;
+		}
+	}
+
+	</style>
