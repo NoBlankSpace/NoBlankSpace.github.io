@@ -1,0 +1,319 @@
+---
+import { Image } from 'astro:assets';
+import AmuletLogo from '../../assets/amuletlogo.svg';
+
+import Header from '../../../components/Header.astro';
+
+const effectiveDate = '2025-05-23'
+const email = 'support@noblank.space'
+const website = 'https://noblank.space'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+		<!-- <script src="https://unpkg.com/roughjs@latest/bundled/rough.js"></script> -->
+	</head>
+	<body>
+
+	<div class="container">
+	<Header />
+
+		<div class="content">
+			<div class="apps-container">
+		<!-- Amulet -->
+		<h1>Privacy Policy</h1>
+    <p><strong>Effective Date:</strong> {effectiveDate}</p>
+
+    <p>Amulet (“the App”, “we”, “us”, or “our”) is committed to protecting your privacy. This Privacy Policy explains how the App handles your information. By using the App, you agree to the practices described below.</p>
+
+    <h2>1. Information We Do Not Collect</h2>
+    <p>Amulet is designed to function fully offline. We do <strong>not</strong> collect, store, or transmit any personal data to us or to third parties. Specifically:</p>
+    <ul>
+      <li>The App does not require or support user accounts.</li>
+      <li>All data remains stored locally on your device.</li>
+      <li>We do not collect analytics, usage statistics, or diagnostic data.</li>
+      <li>The App does not access your location, contacts, or other device data beyond what is necessary for its core functionality.</li>
+      <li>The App <strong>does not currently use iCloud or any other cloud-based services</strong>.</li>
+    </ul>
+    <p>Your journal entries and other user-generated content remain entirely on your device unless you manually choose to back them up or share them.</p>
+
+    <h2>2. Future Use of iCloud (Planned Feature)</h2>
+    <p>In future updates, Amulet may introduce optional iCloud sync functionality to help you back up and access your data across your devices. This feature will be strictly opt-in and will be implemented using Apple's iCloud service, meaning your data will be encrypted and stored securely through your Apple ID account.</p>
+    <p>If and when iCloud sync is introduced:</p>
+    <ul>
+      <li>It will remain optional and under your control.</li>
+      <li>No data will be transmitted to our servers.</li>
+      <li>This Privacy Policy will be updated accordingly, and notice will be provided within the App.</li>
+    </ul>
+
+    <h2>3. Security</h2>
+    <p>All data is stored locally on your device. If you enable device-level protections such as Face ID, Touch ID, or a passcode, the App will use those features via standard operating system APIs. These protections are handled entirely by your device and are not accessed or monitored by us.</p>
+
+    <h2>4. Children’s Privacy</h2>
+    <p>Amulet does not knowingly collect or solicit personal information from children under the age of 13. As no data is collected, the App is compliant with the Children’s Online Privacy Protection Act (COPPA).</p>
+
+    <h2>5. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in the App or applicable laws. If we make material changes, we will notify you within the App and update the effective date above.</p>
+    <p>If future updates introduce features involving data collection, analytics, or cloud-based services, those changes will be clearly described here, and your consent will be obtained where required.</p>
+
+    <h2>6. Contact Us</h2>
+    <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+    <ul>
+      <li><strong>Email:</strong> {email}</li>
+      <li><strong>Website:</strong> {website}</li>
+    </ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="footer-container">
+				<p>© 2024 No Blank Space</p>
+				<a class="wide-only" href="/about#contact">
+      		Want to get in touch?
+      	</a>
+				<p>All rights reserved.</p>
+			</div
+</div>
+	</div>
+
+	</body>
+</html>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Outfit:wght@100..900&display=swap');
+
+	body {
+		font-family: 'Outfit';
+		margin: 0;
+		padding: 0;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	h1 {
+		font-weight: 500;
+		font-size: 3rem;
+		padding: 0rem;
+		margin: 0rem;
+		font-family: 'Outfit';
+		/* font-family: 'Gaegu'; */
+		color: #000000;
+	}
+	h2 {
+		font-weight: 500;
+		font-size: 2rem;
+		padding: 0rem;
+		margin: 0rem;
+		font-family: 'Outfit';
+		/* font-family: 'Gaegu'; */
+		color: #000000;
+	}
+
+	p {
+		padding: 0rem;
+		margin: 0rem;
+		font-weight: 300;
+	}
+
+	a {
+		color: black;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		max-width: 1200px;
+		width: 100%;
+    min-height: 100vh;
+	}
+
+	.header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		width: 100vw;
+		height: 3rem;
+		color: #000;
+	}
+
+	.header-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 1rem; /* Instead of padding */
+	}
+
+	.content {
+    display: flex;
+    flex-direction: column;
+    align-items: leading;
+    justify-content: start;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    flex: 1;
+	}
+
+	.apps-container {
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+		gap: 1rem;
+		padding: 0.5rem;
+
+	}
+
+	.app-container {
+		display: flex;
+		flex-direction: column;
+		/* background-color: #0000000B; */
+		padding: 0.75rem 1.25rem;
+		border-radius: 1rem;
+		flex: 1;
+		width: 100%;
+	}
+	.app-description {
+		text-align: justify;
+		max-width: 500px;
+		padding: 0.25rem;
+	}
+
+	.app-header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: leading;
+		flex: 1;
+		gap: 0.5rem;
+	}
+	.app-header h1 {
+		font-size: 1.25rem;
+		font-weight: 400;
+	}
+
+	.app-name {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+		flex: 1;
+	}
+	.app-header img {
+		width: 50px;
+		height: 50px;
+	}
+	.title {
+		font-family: "Outfit";
+		color: #000;
+		font-size: 1rem;
+	}
+	.subtitle {
+		font-family: "Gaegu";
+		color: #000;
+		font-size: 1rem;
+	}
+
+	.app-subheader {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		flex-grow: 1;
+		width: 100%;
+	}
+	.app-subheader p {
+		text-align: left;
+	}
+
+	.release-status {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		background-color: #00000088;
+		color: #ffffff;
+		font-size: 0.75rem;
+		padding: 0.4rem 0.8rem;
+		corner-radius: 1rem;
+		border-radius: 1rem;
+		white-space: nowrap
+	}
+
+.footer {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		width: 100vw;
+		height: 3rem;
+		background-color: #000000;
+		border: none;
+		color: #FFFFFF88;
+		overflow: visible; /* Add this to allow content to overflow */
+	}
+	.footer-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 1rem; /* Instead of padding */
+		overflow: visible; /* Add this too */
+	}
+	.footer-container a {
+		color: #FFFFFF88;
+	}
+
+	@media (max-width: 900px) { /* This is the max-width of the footer */
+		.wide-only {
+			display: none;
+		}
+
+		.title {
+			font-size: 1rem;
+		}
+		.subtitle {
+			font-size: 0.8rem;
+		}
+
+		.app-container {
+			flex-direction: row;
+			align-items: center;
+			flex: 1;
+			justify-items: space-between;
+		}
+
+		.app-name {
+			flex-direction: column;
+			gap: 0;
+			align-items: start;
+			flex: 1;
+		}
+
+		.app-subheader {
+			flex-direction: column;
+			align-items: start;
+			flex: 0;
+		}
+	}
+
+	</style>
